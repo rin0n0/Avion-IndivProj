@@ -1,0 +1,66 @@
+footer{
+    background: rgb(42, 37, 75);
+    min-width: 1440px;
+    width: 100%; 
+}
+.footer__container{
+    max-width: 1280px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer__menu h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.footer__menu a{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.footer__mailling__input{
+    display: flex;
+}
+.footer__mailling__input input{
+    width: 464px;
+    height: 62px;
+    background: rgba(255, 255, 255, 0.15);
+    padding-left: 32px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.footer__mailling__input input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.footer__mailling__input input::placeholder{
+    color: rgb(255, 255, 255);
+}
+.footer__mailling__input button{
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+}
+.footer__bottom{
+    display: flex;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__links{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.footer__links img{
+    width: 24px;
+    height: 24px;
+}

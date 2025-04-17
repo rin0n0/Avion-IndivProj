@@ -1,15 +1,19 @@
 *{
-    box-sizing: border-box; 
+    box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0%;
+    gap:0;
+    margin: 0;
+    padding: 0;
 }
 body{
     margin: 0 auto;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background: rgb(249, 249, 249);
 }
 .wrapper {
     flex: 1;
@@ -20,9 +24,20 @@ button {
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease;
+    background: rgb(240, 240, 240);
+
 }
 button:hover {
-    opacity: 0.85;
+    opacity: 0.80;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(114, 110, 141);
+    transition: color 0.3s;
+}
+a:hover {
+    opacity: 0.80;
 }
 
 nav{
@@ -45,13 +60,8 @@ nav{
 }
 .main-links a{
     margin: 0 22px;
-    text-decoration: none;
-    color: rgb(114, 110, 141);
-    transition: color 0.3s;
 }
-.main-links a:hover {
-    color: rgb(42, 37, 75);
-}
+
 .side-actions{
     display: flex;
     gap:16px;
@@ -73,6 +83,7 @@ nav{
 
 .hero__content__top{
     margin: 60px;  
+    gap: 40px;
 }
 
 .hero__content__top p{
@@ -82,6 +93,7 @@ nav{
 .hero button{
     color: rgb(255, 255, 255);
     font-size: 20px;
+    margin-top: 40px;
     background: rgba(249, 249, 249, 0.15);
 }
 
@@ -114,7 +126,6 @@ nav{
     font-size: 20px;
 }
 .features__content button{
-    background: rgb(249, 249, 249);
     margin-top: 80px;
     font-size: 20px;
     color: rgb(42, 37, 75);
@@ -143,7 +154,6 @@ nav{
     margin: 8px 0px;
 }
 .products button{
-    background: rgb(249, 249, 249);
     font-size: 20px;
     color: rgb(42, 37, 75);
     margin: 32px auto 68px auto;
@@ -163,25 +173,64 @@ nav{
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-}
-
-.product__info img{
-    margin: 35px 0 24px 0;
-    width: 518px;
+    color:rgb(42, 37, 75);
+    gap: 20px;
 }
 
 .product__info h3{
-    color:rgb(42, 37, 75);
     font-size: 24px;
-    margin: 8px 0;
 }
 
+.product__text{
+    font-size: 16px;
+    margin: 18px 0;
+}
 
+.product__metrics{
+    display: flex;
+    gap: 40px;
+}
+
+.product__metric{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product__metrics img{
+    height: 44px;
+}
+
+.product__quantity{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 12px 16px 12px 16px;
+    justify-content: center;
+    color: rgb(42, 37, 75);
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    width: 122px;
+    height: 52px;
+}
+.product__quantity a{
+    color:rgb(114, 110, 141);
+}
+
+.product__add-to-card{
+    display: flex;
+    gap: 16px;
+}
+
+#dark{
+    background: rgb(42, 37, 75);
+    color: white;
+}
 
 footer{
     background: rgb(42, 37, 75);
     min-width: 1440px;
-    width: 100%;
+    width: 100%; 
 }
 .footer__container{
     max-width: 1280px;

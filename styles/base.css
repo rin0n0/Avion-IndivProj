@@ -1,0 +1,41 @@
+*{
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    gap:0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(249, 249, 249);
+}
+.wrapper {
+    flex: 1;
+}
+button {
+    font-size: 18px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    background: rgb(240, 240, 240);
+
+}
+button:hover {
+    opacity: 0.80;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(114, 110, 141);
+    transition: color 0.3s;
+}
+a:hover {
+    opacity: 0.80;
+}

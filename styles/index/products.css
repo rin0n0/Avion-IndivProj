@@ -1,0 +1,28 @@
+.products{
+    width:1280px;
+    color: rgb(42, 37, 75);
+    font-size: 32px; 
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+.products__card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26.5px;
+    
+}
+.products__card img{
+    width: 305px;
+    height: 375px;
+}
+.products__card p{
+    font-size: 20px;
+    color: rgb(42, 37, 75);
+    margin: 8px 0px;
+}
+.products button{
+    font-size: 20px;
+    color: rgb(42, 37, 75);
+    margin: 32px auto 68px auto;
+}
