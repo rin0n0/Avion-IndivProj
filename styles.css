@@ -7,24 +7,32 @@
 }
 body{
     margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper {
+    flex: 1;
 }
 button {
     font-size: 18px;
     padding: 16px 32px;
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: opacity 0.3s ease;
 }
 button:hover {
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
-header{
+nav{
     margin: 25px auto;
+    padding: 0 80px;
     display: flex;
     justify-content: space-between;
     width: 1280px;
 }
+
 .avion{
     font-size: 20px;
     color: rgb(34, 32, 46);
@@ -140,6 +148,36 @@ header{
     color: rgb(42, 37, 75);
     margin: 32px auto 68px auto;
 }
+
+.product{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+}
+.product__img{
+    width: 607px;
+    height: 661px;
+    margin: 50px 80px;
+}
+.product__info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.product__info img{
+    margin: 35px 0 24px 0;
+    width: 518px;
+}
+
+.product__info h3{
+    color:rgb(42, 37, 75);
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+
+
 footer{
     background: rgb(42, 37, 75);
     min-width: 1440px;
@@ -147,6 +185,7 @@ footer{
 }
 .footer__container{
     max-width: 1280px;
+    padding: 50px 0;
     margin: 0 auto;
 }
 .footer__top{
