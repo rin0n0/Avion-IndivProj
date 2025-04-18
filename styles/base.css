@@ -18,12 +18,16 @@ body{
 .wrapper {
     flex: 1;
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 button {
     font-size: 18px;
     padding: 16px 32px;
     border: none;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
     background: rgb(240, 240, 240);
 
 }
@@ -34,8 +38,30 @@ button:hover {
 a{
     text-decoration: none;
     color: rgb(114, 110, 141);
-    transition: color 0.3s;
+    transition: opacity 0.2s;
 }
 a:hover {
     opacity: 0.80;
+}
+.mailling__input{
+    display: flex;
+}
+
+.mailling__input input{
+    padding-left: 32px;
+    border: none;
+}
+
+.mailling__input input:focus{
+    outline: none;
+}
+
+.mailling__input input:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.mailling__input button{
+    font-size: 20px;
+    background: rgb(255, 255, 255);
 }

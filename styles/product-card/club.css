@@ -1,0 +1,35 @@
+.club{
+    order: 4;
+    width: 1440px;
+    margin: 40px auto 80px auto;
+    display: flex;
+    gap: 70px;
+}
+.club__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.club__content h3{
+    margin: 80px 0 26px 0;
+    font-size: 24px;
+    color: rgb(42, 37, 75);
+    text-align: center;
+}
+
+.club__content p{
+    width: 470px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(42, 37, 75);
+    margin-bottom: 200px;
+}
+.club .mailling__input input{
+    width: 341px;
+    background: rgb(239, 239, 239);
+}
+
+.club .mailling__input button{
+    background: rgb(42, 37, 75);
+    color: white;
+}

@@ -1,9 +1,13 @@
 nav{
     margin: 25px auto;
-    padding: 0 80px;
     display: flex;
     justify-content: space-between;
     width: 1280px;
+}
+
+#burger-button{
+    display: none;
+    padding-bottom: 5px;
 }
 
 .avion{
@@ -22,5 +26,25 @@ nav{
 
 .side-actions{
     display: flex;
+    align-items: center;
     gap:16px;
+}
+
+@media (max-width: 768px) {
+    nav{
+        width: 80%;
+        margin: 30px auto 0 auto;
+    }
+    .main-links {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main-links a {
+        margin: 10px 0;
+    }
+    #burger-button{
+        display:block;
+    }    
 }

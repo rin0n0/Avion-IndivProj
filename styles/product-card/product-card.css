@@ -6,7 +6,7 @@
 .product__img{
     width: 607px;
     height: 661px;
-    margin: 50px 80px;
+    margin: 50px 80px 80px 0;
 }
 .product__info{
     display: flex;
