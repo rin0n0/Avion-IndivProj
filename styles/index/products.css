@@ -11,21 +11,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 26.5px; 
+    margin: 26.5px 0; 
 }
-.products__card img{
+.products__card, .products__card_top img{
     width: 305px;
     height: 375px;
 }
-.products__card p{
+.products__card, .products__card_top p{
     font-size: 20px;
     color: rgb(42, 37, 75);
     margin: 8px 0px;
 }
+.products__card{
+    display: none;
+}
+.products__card{
+    transition: visible 0.3s ease;
+}
 .products button{
     font-size: 20px;
     color: rgb(42, 37, 75);
-    margin: 30px auto 0 auto;
+    margin: 60px auto 0 auto;
 }
 
 @media (max-width: 768px) {

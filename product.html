@@ -23,6 +23,9 @@
             <a><img src="images/search.svg" alt="search"></a>
             <a><img src="images/shopping-cart.svg" alt="cart"></a>
             <a><img src="images/user-avatar.svg" alt="profile"></a>
+            <a id="burger-button" href="#">
+                <img src="images/burger.svg" alt="menu">
+            </a>
         </div>
     </nav>
     <main>
@@ -72,6 +75,7 @@
                 <div class="mailling__input">
                     <input type="email" placeholder="your@email.com">
                     <button>Sign up</button>
+                    <div class="error-message" style="display: none;">Please enter a valid email address.</div>
                 </div>
             </div>
         </div>
@@ -109,6 +113,7 @@
                 <div class="mailling__input">
                     <input type="email" placeholder="your@email.com">
                     <button>Sign up</button>
+                    <div class="error-message" style="display: none;">Please enter a valid email address.</div>
                 </div>
             </div>
         </div>
@@ -126,5 +131,8 @@
         </div>
     </div>
     </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/quantity.js"></script>
+    <script src="scripts/email-validation.js"></script>
 </body>
 </html> 

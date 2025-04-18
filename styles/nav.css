@@ -45,6 +45,23 @@ nav{
         margin: 10px 0;
     }
     #burger-button{
+        z-index: 100;
         display:block;
     }    
+    .main-links {
+        display: none;
+        z-index: 10;
+        position: absolute;
+        width: 30vw;
+        right: 0;
+        top: 10px;
+        margin: 0 auto;
+        flex-direction: column;
+        background-color: white; /* по желанию */
+        padding: 10px;
+    }
+
+    .main-links--open {
+        display: flex;
+    }
 }

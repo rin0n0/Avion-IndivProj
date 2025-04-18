@@ -42,9 +42,14 @@ a{
 }
 a:hover {
     opacity: 0.80;
+    cursor: pointer;
+}
+a::selection{
+    background: none;
 }
 .mailling__input{
     display: flex;
+    position: relative;
 }
 
 .mailling__input input{
@@ -64,4 +69,19 @@ a:hover {
 .mailling__input button{
     font-size: 20px;
     background: rgb(255, 255, 255);
+}
+
+.mailling__input input.invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+.mailling__input .error-message {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 14px;
+    top:70px;
+    padding: 5px;
+    background-color: rgb(213, 213, 213);
+    display: none;
 }

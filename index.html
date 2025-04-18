@@ -23,14 +23,16 @@
             <a href="#"><img src="images/search.svg" alt="search"></a>
             <a href="#"><img src="images/shopping-cart.svg" alt="cart"></a>
             <a href="#"><img src="images/user-avatar.svg" alt="profile"></a>
-            <a id="burger-button" href="#"><img src="images/burger.svg" alt="profile"></a>
+            <a id="burger-button" href="#">
+                <img src="images/burger.svg" alt="menu">
+            </a>
         </div>
     </nav>
     <main>
         <div class="hero">
             <div class="hero__content">
                 <p class="hero__content__top">The furniture brand for the future, with timeless designs</p>
-                <button>View collection</button>
+                <button class="view-collection-btn-1">View collection</button>
                 <p class="hero__content__bottom">A new era in eco friendly furniture with Avelon, the French luxury retail brand
                     with nice fonts, tasteful colors and a beautiful way to display things digitally 
                     using modern web technologies.</p>
@@ -51,6 +53,26 @@
         <div class="products">
             <p>New ceramics</p>
             <div class="products__card-container">
+                <div class="products__card_top">
+                    <img src="images/chair3.png" alt="chair">
+                    <a href="product.html"><p>The Dandy chair</p></a>
+                    <p>£250</p>
+                </div>
+                <div class="products__card_top">
+                    <img src="images/vases.png" alt="chair">
+                    <a href="product.html"><p>Rustic Vase Set</p></a>
+                    <p>£155</p>
+                </div>
+                <div class="products__card_top">
+                    <img src="images/vase.png" alt="chair">
+                    <a href="product.html"><p>The Silky Vase</p></a>
+                    <p>£125</p>
+                </div>
+                <div class="products__card_top">
+                    <img src="images/lamp.png" alt="chair">
+                    <a href="product.html"><p>The Lucy Lamp</p></a>
+                    <p>£399</p>
+                </div>
                 <div class="products__card">
                     <img src="images/chair3.png" alt="chair">
                     <a href="product.html"><p>The Dandy chair</p></a>
@@ -72,7 +94,7 @@
                     <p>£399</p>
                 </div>
             </div>
-            <button>View collection</button>
+            <button class="view-collection-btn-2">View collection</button>
         </div>
         <div class="club">
             <img src="images/sofa2.png" alt="sofa">
@@ -82,6 +104,7 @@
                 <div class="mailling__input">
                     <input type="email" placeholder="your@email.com">
                     <button>Sign up</button>
+                    <div class="error-message" style="display: none;">Please enter a valid email address.</div>
                 </div>
             </div>
         </div>
@@ -119,6 +142,7 @@
                 <div class="mailling__input">
                     <input type="email" placeholder="your@email.com">
                     <button>Sign up</button>
+                    <div class="error-message" style="display: none;">Please enter a valid email address.</div>
                 </div>
             </div>
         </div>
@@ -137,5 +161,8 @@
         </div>
     </div>
     </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/email-validation.js"></script>
+    <script src="scripts/viev-colection.js"></script>
 </body>
 </html> 
