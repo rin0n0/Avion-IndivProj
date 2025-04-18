@@ -33,3 +33,19 @@
     background: rgb(42, 37, 75);
     color: white;
 }
+@media (max-width: 768px) {
+    .club{
+        width: 100%;
+        flex-direction: column;
+    }
+    .club__content h3{
+        margin: 20px 0 26px 0;
+    }
+    .club .mailling__input input{
+        width: 60vw;
+        background: rgb(239, 239, 239);
+    }
+    .club__content p{
+        margin-bottom: 40px;
+    }
+}
